@@ -1,0 +1,11 @@
+
+-@restaurants.each do |restaurant|
+  Name：
+  =link_to restaurant.name, restaurant_path(restaurant)
+  %br
+  Address：
+  =restaurant.address
+
+  %br
+  %hr
+=link_to "Create New Restaurant", new_restaurant_path
