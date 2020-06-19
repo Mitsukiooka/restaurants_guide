@@ -1,0 +1,9 @@
+//= require jquery3
+//= require bootstrap-sprockets
+//= require jquery/jquery.min
+//= require jquery/jquery-migrate.min
+//= require bootstrap/js/bootstrap
+//= require aos/aos
+//= require isotope/isotope.pkgd
+//= require owlcarousel/owl.carousel
+//= require main
