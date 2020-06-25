@@ -1,10 +1,8 @@
-//= require jquery3
-//= require popper
-//= require bootstrap-sprockets
 //= require jquery/jquery.min
-//= require jquery/jquery-migrate.min
-//= require bootstrap/js/bootstrap
-//= require isotope/isotope.pkgd
+//= require bootstrap/js/bootstrap.bundle.min
+//= require jquery.easing/jquery.easing.min
+//= require php-email-form/validate
 //= require aos/aos
-//= require owlcarousel/owl.carousel
+//= require isotope-layout/isotope.pkgd.min
+//= require owl.carousel/owl.carousel.min
 //= require main
