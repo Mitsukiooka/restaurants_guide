@@ -1,0 +1,6 @@
+=bootstrap_form_with model: @restaurant, local: true do |f|
+  =f.text_field :name
+  =f.text_field :address
+  =f.text_field :rate
+  =f.file_field :image
+  =f.submit class: 'btn btn-outline-success'
