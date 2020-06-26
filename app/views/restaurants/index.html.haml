@@ -30,10 +30,10 @@
       #portfolio-grid.row.no-gutter{"data-aos" => "fade-up", "data-aos-delay" => "200"}
         -@restaurants.each do |restaurant|
           .item.web.col-sm-6.col-md-4.col-lg-4.mb-4
-            %a.item-wrap.fancybox
+            =link_to restaurant_path(restaurant), class: 'item-wrap fancybox' do
               .work-info
-                %h4=link_to restaurant.name, restaurant_path(restaurant)
-                %p=restaurant.address
-              =image_tag restaurant.image_url, class: 'img-fluid'
+                %h4=restaurant.name
+                %span=restaurant.address
+              =image_tag restaurant.image_url(:thumb), class: 'img-fluid'
 
 =link_to "新規追加", new_restaurant_path

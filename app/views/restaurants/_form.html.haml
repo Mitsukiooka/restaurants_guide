@@ -3,4 +3,11 @@
   =f.text_field :address
   =f.text_field :rate
   =f.file_field :image
+  =f.hidden_field :image_cache
+  -if @restaurant.image?
+    .m-t-5
+      =image_tag @restaurant.image_url(:thumb)
+      .checkbox.checkbox-primary.m-t-5
+        =f.check_box_without_bootstrap :remove_image
+        =f.label :remove_image, 'Image Delete'
   =f.submit class: 'btn btn-outline-success'
